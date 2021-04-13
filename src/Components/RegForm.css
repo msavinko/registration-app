@@ -1,0 +1,43 @@
+.reg{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10%;
+	
+}
+
+.reg__form{
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(253, 249, 244);
+	padding: 50px;
+	border-radius: 15px;
+}
+.reg__form h1{
+	padding: 0 0 20px 0;
+}
+.form__item {
+	padding: 5px;
+}
+.form__item div{
+	font-size: 15px;
+}
+input {
+	width: 300px;
+	height: 30px;
+}
+.error{
+	height: 20px;
+	color: red;
+}
+.submit__btn{
+	min-width: 300px;
+	padding: 17px 30px;
+	margin-top: 20px;
+	background-color: rgb(203, 244, 252);
+	border-radius: 15px;
+	border: none;
+	font-size: 20px;
+	font-weight: 700;
+}
