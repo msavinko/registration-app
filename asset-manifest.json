@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/registration-app/static/css/main.21907853.chunk.css",
-    "main.js": "/registration-app/static/js/main.f0092df6.chunk.js",
-    "main.js.map": "/registration-app/static/js/main.f0092df6.chunk.js.map",
-    "runtime-main.js": "/registration-app/static/js/runtime-main.3cbabbd5.js",
-    "runtime-main.js.map": "/registration-app/static/js/runtime-main.3cbabbd5.js.map",
-    "static/js/2.835b5da8.chunk.js": "/registration-app/static/js/2.835b5da8.chunk.js",
-    "static/js/2.835b5da8.chunk.js.map": "/registration-app/static/js/2.835b5da8.chunk.js.map",
-    "static/js/3.04cc9939.chunk.js": "/registration-app/static/js/3.04cc9939.chunk.js",
-    "static/js/3.04cc9939.chunk.js.map": "/registration-app/static/js/3.04cc9939.chunk.js.map",
-    "index.html": "/registration-app/index.html",
-    "static/css/main.21907853.chunk.css.map": "/registration-app/static/css/main.21907853.chunk.css.map",
-    "static/js/2.835b5da8.chunk.js.LICENSE.txt": "/registration-app/static/js/2.835b5da8.chunk.js.LICENSE.txt"
+    "main.css": "/registration-app2/static/css/main.d757ef29.chunk.css",
+    "main.js": "/registration-app2/static/js/main.2a85bd4d.chunk.js",
+    "main.js.map": "/registration-app2/static/js/main.2a85bd4d.chunk.js.map",
+    "runtime-main.js": "/registration-app2/static/js/runtime-main.ef236361.js",
+    "runtime-main.js.map": "/registration-app2/static/js/runtime-main.ef236361.js.map",
+    "static/js/2.3638743b.chunk.js": "/registration-app2/static/js/2.3638743b.chunk.js",
+    "static/js/2.3638743b.chunk.js.map": "/registration-app2/static/js/2.3638743b.chunk.js.map",
+    "static/js/3.59550954.chunk.js": "/registration-app2/static/js/3.59550954.chunk.js",
+    "static/js/3.59550954.chunk.js.map": "/registration-app2/static/js/3.59550954.chunk.js.map",
+    "index.html": "/registration-app2/index.html",
+    "static/css/main.d757ef29.chunk.css.map": "/registration-app2/static/css/main.d757ef29.chunk.css.map",
+    "static/js/2.3638743b.chunk.js.LICENSE.txt": "/registration-app2/static/js/2.3638743b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.3cbabbd5.js",
-    "static/js/2.835b5da8.chunk.js",
-    "static/css/main.21907853.chunk.css",
-    "static/js/main.f0092df6.chunk.js"
+    "static/js/runtime-main.ef236361.js",
+    "static/js/2.3638743b.chunk.js",
+    "static/css/main.d757ef29.chunk.css",
+    "static/js/main.2a85bd4d.chunk.js"
   ]
 }
