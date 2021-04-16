@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { selectUser } from '../features/NewUser';
+import { selectUser } from '../../features/NewUser';
 import './Profile.css';
 
 const Profile = () => {

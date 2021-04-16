@@ -1,17 +1,14 @@
 import React, { useState } from 'react';
+import { registration } from '../../features/NewUser';
 import { useDispatch } from "react-redux";
-import { registration } from '../features/NewUser';
-import './RegForm.css';
+import { NavLink } from 'react-router-dom';
 
-const RegForm = () => {
+const NameForm = () => {
 	const [familyName,setFamilyName] = useState("");
 	const [name,setName] = useState("");
 	const [patronimicName,setPatronimicName] = useState("");
 	const [birthDate,setBirthDate] = useState("");
-	const [email,setEmail] = useState("");
-	const [password,setPassword] = useState("");
-	const [confirmPassword,setConfirmPassword] = useState("");
-	const [isError,setIsError] = useState("");
+
 	const [isPatErr,setPatEr] = useState("");
 	const [isNameErr,setNameEr] = useState("");
 	const [isFamErr,setFamEr] = useState("");
@@ -19,7 +16,7 @@ const RegForm = () => {
 	const dispatch = useDispatch();
 
 	const validateForm = () => {
-		return familyName.length > 2 && name.length > 2 && patronimicName.length >2 && password.length > 5 && password === confirmPassword ;
+		return familyName.length > 2 && name.length > 2 && patronimicName.length >2 ;
 	}
 
 	const newRegistration = (e) => {
@@ -30,14 +27,12 @@ const RegForm = () => {
 				name: name,
 				patronimicName: patronimicName,
 				birthDate: birthDate,
-				email: email,
-				password: password,
 				registration: true,
 			})
 		);
 	};
 
-		const checkFamily = (e) =>{
+	const checkFamily = (e) =>{
 		const checkFam = e.target.value;
 		setFamilyName(checkFam);
 		if (checkFam.length < "3"){
@@ -67,21 +62,11 @@ const RegForm = () => {
 		}
 	};
 
-	const checkValidation = (e) => {
-		const confPass = e.target.value;
-		setConfirmPassword(confPass);
-		if( password !== confPass){
-			setIsError("Пароль не совпадает");
-		}else {
-			setIsError("");
-		}
-	};
-	
 
-  return (
-    <div className="reg">
+	
+	return(
 		<form className="reg__form" onSubmit={(e) => newRegistration(e)}>
-			<h1>Форма регистрации</h1>
+			<h2>Персональные данные</h2>
 			<div className="form__item"> 
 				<div>Фамилия</div>
 				<input type="familyName" placeholder="Фамилия на латинице" value={familyName} onChange={(e) => checkFamily(e)}  required />
@@ -101,23 +86,11 @@ const RegForm = () => {
 				<div>Дата рождения</div>
 				<input type="date" value={birthDate} onChange={(e) => setBirthDate(e.target.value)} required/>
 			</div>
-			<div className="form__item">
-				<div>Email</div>
-				<input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required/>
-			</div>
-			<div className="form__item">
-				<div>Пароль</div>
-				<input type="password" placeholder="Пароль" value={password} onChange={(e) => setPassword(e.target.value)} required/>
-			</div>
-			<div className="form__item">
-				<div>Повторите пароль</div>
-				<input type="password" placeholder="Повторите пароль" value={confirmPassword} onChange={(e) => checkValidation(e)} required/>
-				<div className="error">{isError}</div>
-			</div>
-			<button type="submit" className="submit__btn" disabled={!validateForm()} >Регистрация</button>
+			<NavLink to="emailpassform">
+			<button type="button" className="submit__btn" disabled={!validateForm()} >Далее</button>
+			</NavLink>
 		</form>
-    </div>
-  );
+	);
 }
 
-export default RegForm;
+export default NameForm;
